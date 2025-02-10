@@ -1,5 +1,9 @@
 # Titanic - Machine Learning from disater
 
+ML stand for "Machine Learning"
+
+DL stand for "Deep Learning"
+
 ## French part
 
 ### **Important !!**  
@@ -31,12 +35,24 @@ Pour cela, **Kaggle** met à disposition un jeu de données d'entraînement cont
 
 Le but est donc de créer un modèle de **ML/DL** et de l'entraîner sur ce jeu de données.  
 
+#### Choix variables
+
+Parmis l'ensemble des caractéristiques disponible sur chaque individu, j'ai fais le choix de ne retenir que l'age, le sex, la classe du voyageur (1ere, 2nd, 3eme), le prix du billet, son nombre de frère/soeurs ainsi que son nombre de parents/enfants. Ce choix **n'est que le miens** et chaque personne est libre de choisir plus ou moins de variable si celles-ci lui semblent en corrélation avec la survie du voyageur.
+
+En effet j'ai pensé que l'age, le sex et la classe sociale avait un impact direct sur la survie de la personne (ex: "Les femmes et les enfants d'abords")
+
+De plus, j'ai voulu garder aussi le prix du billet, car celui-ci impact le confort du voyageur et surement sa sécurité ?
+
+Quant au nombre de frères/soeurs, parents/enfants, j'ai préféré les garder pour avoir un modèle plus complexe en imaginant que le comportement d'un parent envers son enfant dans ce genre de catastrophe, profiterait à plein de personne en détresse sur le bateau.
+
+#### Prédictions
+
 Vient ensuite la phase de prédiction sur le jeu de données de test, dans lequel nous disposons de toutes les caractéristiques de chaque personne sans savoir si celle-ci a survécu ou non.  
 
 Une fois notre modèle entraîné, nous pouvons effectuer une prédiction sur les personnes qui font partie du jeu de données de test. Le fichier **results.csv** est un exemple de prédiction.  
 
 
-## English part
+## English Part
 
 ### **Important !!**  
 
@@ -49,11 +65,11 @@ You can retrieve them at any time by creating an account on this platform.
 ### **Introduction**  
 
 #### **Challenge**  
-This challenge is a **machine learning** challenge available on the **Kaggle** platform:  
+This challenge is a **machine learning** competition available on the **Kaggle** platform at the following address:  
 **[Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic)**  
 
 #### **Prerequisites**  
-This challenge was written on **Jupyter Notebook**, using **Python 3.10** and the following dependencies:  
+This challenge was written in **Jupyter Notebook**, using **Python 3.10** and the following dependencies:  
 
 **- numpy**  
 **- pandas**  
@@ -63,13 +79,26 @@ This challenge was written on **Jupyter Notebook**, using **Python 3.10** and th
 #### **Description**  
 This challenge aims to predict the survival (or not) of a group of people aboard the Titanic.  
 
-To achieve this, **Kaggle** provides a training dataset containing various parameters for each person (Name, Age, Sex, etc.), along with a label indicating whether the person survived.  
+To do this, **Kaggle** provides a training dataset containing various parameters for each person (Name, Age, Gender, etc.), as well as a parameter indicating whether the person survived.  
 
-The goal is to create an **ML/DL model** and train it on this dataset.  
+The goal is to create a **ML/DL** model and train it on this dataset.  
 
-Then comes the prediction phase on the test dataset, where we have all the characteristics of each person but do not know whether they survived or not.  
+#### Chosen variables
 
-Once our model is trained, we can make predictions on the individuals in the test dataset. The file **results.csv** is an example of a prediction.  
+Among all the available features for each individual, I chose to retain only age, gender, the passenger class (1st, 2nd, 3rd), the ticket price, the number of siblings/spouses, and the number of parents/children. This choice **is mine alone**, and each person is free to select more or fewer variables if they seem to be correlated with the passenger's survival.
+
+Indeed, I thought that age, gender, and social class had a direct impact on the survival of the person (e.g., "Women and children first").  
+
+Moreover, I also wanted to keep the ticket price, as it impacts the comfort of the passenger and probably their safety?
+
+As for the number of siblings/spouses and parents/children, I preferred to keep them in order to have a more complex model, imagining that a parent's behavior towards their child in such a catastrophe could help many people in distress on the ship.
+
+#### Predictions
+
+Next comes the prediction phase on the test dataset, where we have all the characteristics of each person but do not know whether they survived or not.  
+
+Once our model is trained, we can make predictions for the people in the test dataset. The **results.csv** file is an example of predictions.  
+ 
 
 
 
